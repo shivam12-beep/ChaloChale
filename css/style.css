@@ -1,0 +1,116 @@
+:root {
+  --brand-primary: #176b87;
+  --brand-deep: #123b50;
+  --brand-accent: #f2b84b;
+}
+
+body {
+  color: #23313b;
+}
+
+.feature-card,
+.destination-card,
+.package-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.25rem rgb(18 59 80 / 10%) !important;
+}
+
+.feature-card {
+  background-color: #fff;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.85rem 1.75rem rgb(18 59 80 / 16%) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--brand-primary);
+  --bs-btn-border-color: var(--brand-primary);
+  --bs-btn-hover-bg: var(--brand-deep);
+  --bs-btn-hover-border-color: var(--brand-deep);
+  --bs-btn-active-bg: var(--brand-deep);
+  --bs-btn-active-border-color: var(--brand-deep);
+}
+
+.hero-carousel .carousel-item img {
+  height: min(68vh, 650px);
+  min-height: 360px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-carousel .carousel-caption {
+  bottom: 18%;
+}
+
+.page-hero {
+  padding: 5rem 0;
+  color: #fff;
+  background: linear-gradient(120deg, rgb(18 59 80 / 95%), rgb(23 107 135 / 82%)), url("../image/4 img.jpg") center 48% / cover;
+}
+
+.destination-card,
+.package-card {
+  overflow: hidden;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.destination-card:hover,
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgb(18 59 80 / 12%) !important;
+}
+
+.destination-card img,
+.package-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.destination-card .destination-image-shadow {
+  width: calc(100% - 1.5rem);
+  margin: 0.75rem auto 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgb(18 59 80 / 38%);
+}
+
+.contact-detail {
+  margin-top: 1.5rem;
+}
+
+.contact-detail a {
+  color: var(--brand-primary);
+}
+
+.site-footer a:hover {
+  color: var(--brand-accent) !important;
+}
+
+.footer-links li + li {
+  margin-top: 0.65rem;
+}
+
+.footer-links a {
+  color: rgb(255 255 255 / 68%);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

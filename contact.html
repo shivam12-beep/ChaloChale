@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact ChaloChale for help planning your next trip.">
+    <title>Contact | ChaloChale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">ChaloChale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="Packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="Booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero text-center">
+        <div class="container">
+          <p class="text-uppercase fw-semibold mb-2">We’re here to help</p>
+          <h1 class="display-5 fw-bold">Contact our travel team</h1>
+          <p class="lead mb-0">Questions about a trip? Send us a message and we’ll be happy to help.</p>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <h2 class="h3 fw-bold">Get in touch</h2>
+              <p class="text-secondary">Tell us what you’re planning. Our team can help you choose a destination, find a package, or prepare for your trip.</p>
+              <div class="contact-detail"><span class="fw-semibold">Email</span><br><a href="mailto:hello@chalochale.example">hello@chalochale.example</a></div>
+              <div class="contact-detail"><span class="fw-semibold">Phone</span><br><a href="tel:+911234567890">+91 12345 67890</a></div>
+              <div class="contact-detail"><span class="fw-semibold">Hours</span><br><span class="text-secondary">Monday–Saturday, 9:00 AM–6:00 PM</span></div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 p-md-5">
+                  <h2 class="h4 fw-bold mb-4">Send us a message</h2>
+                  <form data-demo-form data-form-type="contact">
+                    <div class="mb-3">
+                      <label class="form-label" for="contactName">Full name</label>
+                      <input class="form-control" id="contactName" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" for="contactEmail">Email address</label>
+                        <input class="form-control" type="email" id="contactEmail" name="email" autocomplete="email" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" for="contactPhone">Phone number <span class="text-secondary">(optional)</span></label>
+                        <input class="form-control" type="tel" id="contactPhone" name="phone" autocomplete="tel">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="contactSubject">What can we help with?</label>
+                      <select class="form-select" id="contactSubject" name="subject" required>
+                        <option value="" selected disabled>Choose a topic</option>
+                        <option>Planning a trip</option>
+                        <option>Existing booking</option>
+                        <option>Other question</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="contactMessage">Message</label>
+                      <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="alert alert-success d-none" data-form-confirmation role="status"></div>
+                    <button class="btn btn-primary px-4" type="submit">Send message</button>
+                    <p class="form-text mt-3 mb-0">This demo form shows a confirmation but does not send data to a server.</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer bg-dark text-light py-4">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-6"><a class="navbar-brand fw-bold text-light" href="index.html">ChaloChale</a><p class="text-white-50 mb-0 mt-2">Thoughtful trips, unforgettable memories.</p></div>
+          <div class="col-md-6"><nav aria-label="Footer navigation"><ul class="nav justify-content-md-end"><li class="nav-item"><a class="nav-link text-light" href="destination.html">Destinations</a></li><li class="nav-item"><a class="nav-link text-light" href="Packages.html">Packages</a></li><li class="nav-item"><a class="nav-link text-light" href="Booking.html">Booking</a></li></ul></nav></div>
+        </div>
+        <hr class="border-secondary"><p class="text-center text-white-50 small mb-0">&copy; 2026 ChaloChale. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
